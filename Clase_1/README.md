@@ -1,0 +1,1 @@
+Esta Clase vimos operadores y pequeños ejercicios para familiarizarnos con la lógica del lenguaje
