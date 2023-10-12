@@ -7,16 +7,16 @@ const nuevoString = "Franco";
 const nuevoNumero = 4;
 
 // Crea una variable de tipo boolean.
-const nuevoBoolean = null;
+const nuevoBoolean = true;
 
 // Resuelve el siguiente problema matemático.
-const nuevaResta = null - 7 === 3;
+const nuevaResta = 10 - 7 === 3;
 
 // Resuelve el siguiente problema matemático.
-const nuevaMultiplicacion = null * 4 === 40;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático.
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 function primerCaracter(string){
@@ -28,13 +28,13 @@ function primerCaracter(string){
 function ultimoCaracter(string){
     //Por parámetros se pasa una cadena de texto. Tienes que devolver el primer carácter!
     //Tu código: 👇
-
+    return string[string.lenght-1]
 }
 
 function longitudDeCadena(string){
     //En este ejercicio tendrás que devolver la longitud de la cadena que se pasa por parámetros!
     //tu código: 👇
-
+    return string.lenght
 }
 
 function enMayusculas(string){
