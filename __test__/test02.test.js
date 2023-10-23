@@ -10,7 +10,7 @@ const {
     igualQue,
     menorQue,
     equalLength
-} = require('../02.Operadores/ejercicios02.js');
+} = require('..//02 - Operadores/ejercicios02');
 
 describe('suma', function (){
     it('Debería retornar el resultado de la suma entre X e Y', function (){

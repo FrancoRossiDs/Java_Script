@@ -10,7 +10,7 @@ const {
     nValor,
     numMúltiplo,
     length
-} = require('../03.Condicionales/ejercicios03.js')
+} = require('../03 - Condicionales/ejercicios03')
 
 describe('mayorEdad', function (){
     it('Debería retornar "Es mayor de edad" si corresponde', function (){

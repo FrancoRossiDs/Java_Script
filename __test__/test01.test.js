@@ -15,7 +15,7 @@ const {
     repairToString,
     contains
     
-} = require('../01.VariablesyTiposdeDatos/ejercicios01.js')
+} = require('../01 - VariablesyTiposdeDatos/ejercicios01')
 
 describe('primerCaracter', () =>{
     it('Deberia devolver el primero Caracter del String', () =>{
