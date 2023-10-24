@@ -1,0 +1,1 @@
+En esta primera segunda clase vimos los operadores lógicos y matemáticos y su aplicacion en distintos ejercicios

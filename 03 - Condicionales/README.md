@@ -1,0 +1,1 @@
+En esta tercera clase vimos los condicionales y los volvimos a aplicar en distintos ejercicios
