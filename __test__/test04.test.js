@@ -7,7 +7,7 @@ const {
     invertirCadena,
     cantidadDeVocales,
     primerDivisible
-} = require('../04.Bucles/ejercicios04.js')
+} = require('../04 - Bucles/ejercicios04')
 
 describe('encuentroX',()=>{
     it('Deberia encontrar el numero X', ()=>{
