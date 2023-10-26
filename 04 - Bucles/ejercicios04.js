@@ -3,18 +3,13 @@ function cantidadDeVocales(phrase){
 // Tu código:👇
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 let contador = 0;
-
     for (let i = 0; i < phrase.length; i++) {
-        const char = phrase[i].toLowerCase(); // Convert the character to lowercase for case-insensitivity
+        const char = phrase[i].toLowerCase(); 
         if (vowels.includes(char)) {
-            contador++;
-        }
+            contador++;}
     }
-
     return contador;
 }
-
-
 function primerDivisible(divisor, dividendo) {
 // Encuentra el primer número divisible por 'num' a partir de un número dado utilizando un bucle while
 // Tu código:👇
@@ -36,20 +31,18 @@ function sumandoTodo(num){
 // Realiza un algoritmo que el cual recorra del 0 al numero pasado por parametros, debes retornar la suma de todo los
 // numeros que se recorrio
 // Tu código:👇
-    let suma =0;
-    for(let i=0; i<= num; i++){
-        suma+=i;
-    }
-    return suma;
+let suma =0;
+for(let i=0; i<= num; i++){
+    suma+=i;
+}
+return suma;
 }
 
 function BinarioADecimal(num) {
 // La funcion recibe por parametro, un numero binario pero en tipo de dato String
 // debes tomar este numero binario y ayudandote de un bucle pasarlo a binario
 // tu código:👇
-while(num>1){
-    
-}
+
 }
 
 function Fibonacci(n){
