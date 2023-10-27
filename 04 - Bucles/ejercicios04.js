@@ -1,41 +1,51 @@
 function cantidadDeVocales(phrase){
 // Cuenta la cantidad de vocales en la frase pasada por parametros utilizando un bucle for
 // Tu código:👇
-const vowels = ['a', 'e', 'i', 'o', 'u'];
+const vocales = ['a', 'e', 'i', 'o', 'u'];
 let contador = 0;
     for (let i = 0; i < phrase.length; i++) {
         const char = phrase[i].toLowerCase(); 
-        if (vowels.includes(char)) {
+        if (vocales.includes(char)) {
             contador++;}
     }
     return contador;
 }
+
 function primerDivisible(divisor, dividendo) {
 // Encuentra el primer número divisible por 'num' a partir de un número dado utilizando un bucle while
 // Tu código:👇
+let resultado = null;
+    while (resultado == null) {
+    if (dividendo%divisor == 0) {
+        resultado = divisor;
+    } else {
+        divisor++;
+    }
+    }
+    return resultado;
 
 }
-
 
 function encuentraX(x){
 //Realiza un algoritmo que recorre numeros del 1 al 100, cuando pase por el numero X pasado por parametros
 // retornar "El numero X es: ..."
 // Tu Código:👇
-for(let i=0; i<=100;i++)
+    for(let i=0; i<=100;i++)
     if (i==x){
         return "El numero X es: " + i;
     }
 }
 
+
 function sumandoTodo(num){
 // Realiza un algoritmo que el cual recorra del 0 al numero pasado por parametros, debes retornar la suma de todo los
 // numeros que se recorrio
 // Tu código:👇
-let suma =0;
-for(let i=0; i<= num; i++){
-    suma+=i;
-}
-return suma;
+    let suma =0;
+    for(let i=0; i<= num; i++){
+        suma+=i;
+    }
+    return suma;
 }
 
 function BinarioADecimal(num) {
