@@ -73,8 +73,6 @@ function Fibonacci(n){
     } 
     return b
 }
-console.log(Fibonacci(20))
-
 function esPrimo(numero) {
 //Escribe un programa que verifique si un número dado es primo o no.
 //Un número primo es aquel que solo es divisible por 1 y por sí mismo.
