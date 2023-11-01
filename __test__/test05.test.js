@@ -12,7 +12,7 @@ const {
     enOrden,
     dosEnUno,
     matrizTranspuesta,
-} = require('../05.Arrays/ejercicios05')
+} = require('../05 - Arrays/ejercicios05')
 
 describe('primerElemento', () => {
     it('Deberia retornar primer elemento del array', () =>{
