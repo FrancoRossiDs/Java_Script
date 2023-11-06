@@ -9,7 +9,7 @@ const {
     sueldoMasAlto,
     aprobados
     
-} = require('../07.Funciones/ejercicios07.js')
+} = require('..//07 - Funciones/ejercicios07')
 
 describe('Bienvenida', () =>{
     it('La función creada debe retornar el saludo de bienvenida', () =>{

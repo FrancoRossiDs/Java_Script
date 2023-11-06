@@ -8,7 +8,7 @@ const {
     permisosDeEntrada,
     libro,
     mostrarInformacionLibro
-} = require('../06.Objetos/ejercicios06')
+} = require('../06 - Objetos/ejercicios06')
 
 describe('examenIngreso', ()=>{
   it('Almunos deberia contener sus respectivas propiedades y valores', () =>{
