@@ -6,7 +6,7 @@ const {
     filtaradoPorCategoria,
     examenIngreso,
     nombreContiene
-} = require('../09.Metodos/Ejercicios09.js');
+} = require('../09 - Metodos/Ejercicios09');
 
 describe('arrayDuplicados', () =>{
     it('Deberia devolver otro array con los valores duplicados', () =>{
