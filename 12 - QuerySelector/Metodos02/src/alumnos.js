@@ -98,14 +98,16 @@ const btnAsistencia = () => {
     deleteColumn();
     bodyTableAlumnos.innerHTML = "";
     alumnos.forEach(alumno => {
+        const porcentajeAsistencia = (alumno.asistencias / 24) * 100;
         bodyTableAlumnos.innerHTML += `
             <tr>
                 <td>${alumno.asistencias}/24</td>
+                <td>${Math.round(porcentajeAsistencia)}%</td>
             </tr>
         `;
     });
     firstColumn.innerHTML = "Asistencias";
-    secondColumn.innerHTML = "";
+    secondColumn.innerHTML = "Porcentaje";
     thridColumn.innerHTML = "";  // Limpiar el título de la tercera columna
 
     // Eliminar todos los títulos adicionales
