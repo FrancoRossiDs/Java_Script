@@ -3,7 +3,7 @@
 const peliculas = [
     {titulo: "Titanic",año: 1997,produccion: "Estados Unidos",genero: "Drama",estreno: false, img:'./src/img/titanic.jpg'},
     {titulo: "Inception",año: 2010,produccion: "Estados Unidos",genero: "Ciencia ficción",estreno: false, img:'./src/img/Inception.jpg'},
-    {titulo: "The 'odfather",año: 1972,produccion: "Estados Unidos",genero: "Crimen",estreno: false, img:"/src/img/thegodfather.jpg"},
+    {titulo: "The Godfather",año: 1972,produccion: "Estados Unidos",genero: "Crimen",estreno: false, img:"/src/img/thegodfather.jpg"},
     {titulo: "The Shawshank Redemption",año: 1994,produccion: "Estados Unidos",genero: "Drama",estreno: false, img:"./src/img/shawshank.jpg"},
     {titulo: "Oppenheimer",año: 2023 ,produccion: "Estados Unidos",genero: "Drama",estreno: true, img:"./src/img/oppenheimer.jpg"},
     {titulo: "My Adventures with Superman",año: 2023,produccion: "Estados Unidos",genero: "Acción",estreno: true, img:"./src/img/my_adventures_with_superman.jpg"},
@@ -21,30 +21,75 @@ const pelis = document.querySelector('.peli') // Obtenemos sección de pelis. do
 
 //BOTON TODOS => Debe devolver todas las portadas (img) de las peliculas que hay.
 const allFilms = () => {
+    // Clear the existing content in the .peli section
+    pelis.innerHTML = '';
 
-}
+    // Iterate through the peliculas array and append img elements to the .peli section
+    peliculas.forEach((pelicula) => {
+        const imgElement = document.createElement('img');
+        imgElement.src = pelicula.img;
+        imgElement.alt = pelicula.titulo;
+        pelis.appendChild(imgElement);
+    });
+};
 
 //BOTON ESTRENOS => Debe devolver las portadas (img) solo de las peliculas que esten en estreno 'estreno: true'
 const estrenos = () => {
-
+    pelis.innerHTML=""
+    const estrenosArray=peliculas.filter((peliculas)=>peliculas.estreno);
+    estrenosArray.forEach((peliculas) =>{
+        const imgElement=document.createElement('img');
+        imgElement.src=peliculas.img;
+        imgElement.alt=peliculas.titulo
+        pelis.appendChild(imgElement)
+    })
 }
 
 //BOTON ACCION => Debe devolver solo aquellas peliculas que contengan como genero ‘Acción’.
 const accion = () => {
-
+    pelis.innerHTML=""
+    const accionArray=peliculas.filter((peliculas)=>peliculas.genero==="Acción");
+    accionArray.forEach((peliculas)=>{
+        const imgElement=document.createElement('img');
+        imgElement.src=peliculas.img;
+        imgElement.alt=peliculas.titulo
+        pelis.appendChild(imgElement)
+    })
 }
 
 //BOTON DRAMA => Debe devolver solo aquellas peliculas que contengan como genero ‘Drama’.
 const drama = () => {
-
+    pelis.innerHTML=""
+    const accionArray=peliculas.filter((peliculas)=>peliculas.genero==="Drama");
+    accionArray.forEach((peliculas)=>{
+        const imgElement=document.createElement('img');
+        imgElement.src=peliculas.img;
+        imgElement.alt=peliculas.titulo
+        pelis.appendChild(imgElement)
+    })
 }
 
 //BOTON CRIMEN => Debe devolver solo aquellas peliculas que contengan como genero ‘Crimen’.
 const crimen = () => {
-
+    pelis.innerHTML=""
+    const accionArray=peliculas.filter((peliculas)=>peliculas.genero==="Crimen");
+    accionArray.forEach((peliculas)=>{
+        const imgElement=document.createElement('img');
+        imgElement.src=peliculas.img;
+        imgElement.alt=peliculas.titulo
+        pelis.appendChild(imgElement)
+    })
 }
 
 //BOTON TODOS => debe devolver aquellas peliculas que NO estén dentro de los generos anteriores.
 const otros = () => {
-
+    const generosExcluidos=["Acción","Drama","Crimen",]
+    pelis.innerHTML=""
+    const accionArray=peliculas.filter((peliculas)=>!generosExcluidos.includes(peliculas.genero));
+    accionArray.forEach((peliculas)=>{
+        const imgElement=document.createElement('img');
+        imgElement.src=peliculas.img;
+        imgElement.alt=peliculas.titulo
+        pelis.appendChild(imgElement)
+    })
 }
