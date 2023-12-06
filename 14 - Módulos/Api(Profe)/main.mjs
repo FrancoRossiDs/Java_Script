@@ -2,11 +2,13 @@ import { getCharacters } from "./getCharacters.mjs";
 
 
 const select = document.querySelector('#chars')
+const searchInput=document.querySelector("#search")
+const StatusInput=document.querySelector("#status")
 
 
 
 select.addEventListener('change', (e) => getCharacters(e.target.value))
-getCharacters(40)
+select.addEventListener()
 
 // async function getChars(){
 //     try{
