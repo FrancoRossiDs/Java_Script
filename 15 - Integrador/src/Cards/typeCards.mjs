@@ -12,7 +12,7 @@ const cardsByType = async (filters) => {
     // Aplicar más filtros si están definidos
     if (filters.name) {
         console.log('Filtrando por nombre:', filters.name); // Imprimir el filtro de nombre
-        result = result.filter(card => card.name.toLowerCase().includes(filters.name));
+        result = result.filter(card => card.name.toLowerCase().includes(filters.name)||card.desc.toLowerCase().includes(filters.name));
     }
     if(filters.id){
         console.log('Filtrando por ID:', filters.id); // Imprimir el filtro de ID
