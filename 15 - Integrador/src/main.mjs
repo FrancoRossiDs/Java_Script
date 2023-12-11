@@ -42,6 +42,15 @@ reset.addEventListener('click', () => {
     spellFilters.style.display = 'none';
     trapFilters.style.display = 'none';
     reset.style.display = 'none';
+    filters.id = null;
+    filters.name = null;
+    filters.attribute = null;
+    filters.type = null;
+    filters.monsterClass = null;
+    filters.level = null;
+    filters.spellType = null;
+    filters.trapType = null;
+    search.value = '';
 })
 
 type.addEventListener('change', (e) => {
