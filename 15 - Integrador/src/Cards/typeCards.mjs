@@ -9,37 +9,34 @@ const cardsByType = async (filters) => {
     
     let result = info.data;
 
-    // Aplicar más filtros si están definidos
     if (filters.name) {
-        console.log('Filtrando por nombre:', filters.name); // Imprimir el filtro de nombre
+        console.log('Filtrando por nombre:', filters.name); 
         result = result.filter(card => card.name.toLowerCase().includes(filters.name)||card.desc.toLowerCase().includes(filters.name));
     }
     if(filters.id){
-        console.log('Filtrando por ID:', filters.id); // Imprimir el filtro de ID
+        console.log('Filtrando por ID:', filters.id); 
         result = result.filter(card => card.type.toLowerCase().includes(filters.id));
     }
     if (filters.attribute) {
-        console.log('Filtrando por atributo:', filters.attribute); // Imprimir el filtro de atributo
+        console.log('Filtrando por atributo:', filters.attribute); 
         result = result.filter(card => card.attribute.toLowerCase().includes(filters.attribute.toLowerCase()));
     }
 
     if (filters.type) {
-        console.log('Filtrando por tipo:', filters.type); // Imprimir el filtro de tipo
+        console.log('Filtrando por tipo:', filters.type); 
         result = result.filter(card => card.race.toLowerCase()===(filters.type.toLowerCase()));
     }
 
     if (filters.monsterClass) {
-        console.log('Filtrando por clase:', filters.monsterClass); // Imprimir el filtro de clase
+        console.log('Filtrando por clase:', filters.monsterClass); 
         result = result.filter(card => card.type.toLowerCase().includes(filters.monsterClass.toLowerCase()));
     }
 
     if (filters.level) {
-        console.log('Filtrando por nivel:', filters.level); // Imprimir el filtro de nivel
+        console.log('Filtrando por nivel:', filters.level); 
         result = result.filter(card => card.level === parseInt(filters.level) || card.linkval === parseInt(filters.level));
     }
 
-    
-    // Muestra las cartas filtradas
     displayresult(result);
 };
 

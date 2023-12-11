@@ -28,8 +28,6 @@ function inicio(){
 }
 
 inicio();
-
-// Inicializa la paginación
 const { initPagination } = setupPagination(getCharacters);
 initPagination();
 
@@ -75,18 +73,14 @@ type.addEventListener('change', (e) => {
 tipoSelect.addEventListener('change', () => {
     const selectedType = tipoSelect.value;
 
-    // Restablecer los subfiltros cuando cambias el tipo principal
     filters.type = null;
-    filters.spellType = null;  // Restablecer el subfiltro de hechizos
-    filters.trapType = null;   // Restablecer el subfiltro de trampas
-
-    // Oculta todos los filtros
+    filters.spellType = null;  
+    filters.trapType = null;   
     monsterFilters.style.display = 'none';
     spellFilters.style.display = 'none';
     trapFilters.style.display = 'none';
     reset.style.display = 'none';
 
-    // Muestra los filtros correspondientes al tipo seleccionado
     if (selectedType === 'monster') {
         footer.style.display = 'none';
         monsterFilters.style.display = 'block';
@@ -101,7 +95,6 @@ tipoSelect.addEventListener('change', () => {
         reset.style.display = 'block';
     }
 
-    // Aplicar los filtros cuando cambias el tipo principal
     cardsByType(filters);
 });
 
@@ -191,7 +184,7 @@ nivel.addEventListener('change', (e) => {
 });
 
 spell.addEventListener('change', (e) => {
-    console.log(e.target.value);  // Agrega esta línea para imprimir el valor
+    console.log(e.target.value); 
     if(e.target.value === "null"){
         footer.style.display = 'none';
         filters.type = null;

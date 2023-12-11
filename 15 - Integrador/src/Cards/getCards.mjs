@@ -2,7 +2,7 @@
 const getCharacters = async (page = 1) => {
     const main = document.querySelector('main');
     main.innerHTML = '';
-    const cardsPerPage = 52; // Puedes ajustar esto según tus necesidades
+    const cardsPerPage = 52; 
     const start = (page - 1) * cardsPerPage;
     const end = start + cardsPerPage;
 

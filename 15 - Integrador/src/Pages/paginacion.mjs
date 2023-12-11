@@ -18,8 +18,7 @@ const setupPagination = (getCharacters) => {
         });
 
         nextButton.addEventListener('click', () => {
-            // Puedes ajustar este valor según tus necesidades
-            const totalPages = 10; // Este valor debería calcularse según la cantidad total de cartas
+            const totalPages = 10; 
             if (currentPage < totalPages) {
                 updatePage(currentPage + 1);
             }
