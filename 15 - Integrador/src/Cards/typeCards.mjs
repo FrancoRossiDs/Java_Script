@@ -10,7 +10,7 @@ const cardsByType = async (filters) => {
     let result = info.data;
 
     if (filters.name) {
-        result = result.filter(card => card.name.toLowerCase().includes(filters.name)||card.desc.toLowerCase().includes(filters.name));
+        result = result.filter(card => card.name.toLowerCase().includes(filters.name.toLowerCase())||card.desc.toLowerCase().includes(filters.name.toLowerCase()));
     }
     if(filters.id){
         result = result.filter(card => card.type.toLowerCase().includes(filters.id));
